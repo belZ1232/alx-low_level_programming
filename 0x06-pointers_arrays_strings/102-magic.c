@@ -3,7 +3,7 @@
 int _putchar(char);
 {
 int n;
-int a[5];
+int a[2];
 int *p;
 
 a[2] = 1024;
