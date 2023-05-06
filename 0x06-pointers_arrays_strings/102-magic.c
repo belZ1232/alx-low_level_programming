@@ -16,7 +16,11 @@ p = &n;
 * - only one statement
 * - Am not allowed to code anything else than this line of code
 */
- p[5] = 98;
+p[5] = 98;
+/*
+* Assign the value 98 to the element with index 5
+for (int i = 0; i < 10; i++)
+*/
 /* ...so that this prints 98\n */
 printf("a[2] = %d\n", a[2]);
 return (0);
