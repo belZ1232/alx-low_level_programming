@@ -5,27 +5,26 @@
 /**
 *_strdup - the function returns a pointer
 *to a new string which is a duplicate of the string.
-*
-* @str: Duplicated string.
-* @Return: A pointer to the copied string (Successfully)
-* and NULL if malloc fail.
+*a copy of string given as a parameter.
+* @str: Duplicates string.
+* @Return: 0 (Successfully)
+* and NULL if malloc fails.
 */
 
 char *_strdup(char *str)
 
 {
-char *duplicate;
-unsigned int i, len;
-i = 0;
-len = 0;
+char *zzz;
+int i, x = 0;
 if (str == NULL)
 return (NULL);
-while (str[len])
-len++;
-duplicate = malloc(sizeof(char) * (len + 1));
-if (duplicate == NULL)
-return (NULL);
-while ((duplicate[i] = str[i]) != '\0')
+i = 0;
+while (str[i] != '\0')
 i++;
-return (duplicate);
+zzz = malloc(sizeof(char) * (i + 1));
+if (zzz == NULL)
+return (NULL);
+for (x = 0; str[x]; x++)
+zzz[x] = str[x];
+return (zzz);
 }
