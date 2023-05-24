@@ -29,7 +29,6 @@ return (m - n);
 * op_mul - Results of two digits.
 * @a: 1st digit.
 * @b: 2nd digit.
-*
 * Return: results of m and n.
 */
 int op_mul(int m, int n)
