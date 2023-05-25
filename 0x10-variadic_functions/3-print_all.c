@@ -13,7 +13,7 @@ va_list list;
 va_start(list, format);
 if (format)
 {
-for (format[i])
+while (format[i])
 {
 switch (format[i])
 {
