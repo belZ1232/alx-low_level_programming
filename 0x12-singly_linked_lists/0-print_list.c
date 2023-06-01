@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <lists.h>
+#include "lists.h"
 
 /**
 * print_list - elements of list_t.
@@ -13,7 +13,7 @@ size_t n = 0;
 
 while (ptr != NULL)
 {
-If(ptr->str != NULL)
+if (ptr->str != NULL)
 {
 printf("[0] (nil)\n");
 }
