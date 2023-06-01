@@ -15,11 +15,11 @@ while (ptr != NULL)
 {
 if (ptr->str != NULL)
 {
-printf("[0] (nil)\n");
+printf("[%u] %s\n", ptr->len, ptr->str);
 }
 else
 {
-printf("[%u] %s\n", ptr->len, ptr->str);
+printf("[0] (nil)\n");
 }
 n++;
 ptr = ptr->next;
