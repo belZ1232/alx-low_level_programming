@@ -17,14 +17,14 @@ unsigned int sir = 0;
 while (str[sir])
 sir++;
 
+new = malloc(sizeof(list_t));
+if (!new)
+return (NULL);
+
 new->str = strdup(str);
 new->sir = sir;
 new->next = (*head);
 (*head) = new;
-
-new = malloc(sizeof(list_t));
-if (!new)
-return (NULL);
 
 return (*head);
 }
