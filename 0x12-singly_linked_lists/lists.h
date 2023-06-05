@@ -4,14 +4,18 @@
 #include <stdlib.h>
 /**
 * struct list_s - singly linked list
-* @list_t: it is an alias
+* list_t: it is an alias
+* @str: it pointer to an array
+* @len: it is an unsigned integer
+* @next: it is pointer
 */
 typedef struct list_s
 {
 char  *str;
 unsigned int len;
 struct list_s *next;
-}list_t;
+}
+list_t;
 size_t print_list(const list_t *h);
 size_t list_len(const list_t *h);
 /*********** LISTS_H***********/
