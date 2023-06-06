@@ -2,9 +2,8 @@
 /**
 * print_listint - func dat print out all elements list
 * @h: it is a pointer to the head of list
-* Return: nodes of the list
+* Return: the number of nodes in the list
 */
-
 size_t print_listint(const listint_t *h)
 {
 	size_t countnodes = 0;

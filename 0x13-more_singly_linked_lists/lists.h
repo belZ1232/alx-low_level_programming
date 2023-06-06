@@ -5,6 +5,18 @@
 #include <string.h>
 #include <stdio.h>
 
+/**
+* struct listint_s - it is a singly linked list
+* @n: an integer
+* @next: the points to next node
+* Description: singly linked list node structure for the project
+*/
+typedef struct listint_s
+{
+int n;
+struct listint_s *next;
+} listint_t;
+size_t print_listint(const listint_t *h);
 int _putchar(char c);
 listint_t *find_listint_loop(listint_t *head);
 size_t free_listint_safe(listint_t **h);
@@ -20,18 +32,5 @@ void free_listint(listint_t *head);
 listint_t *add_nodeint_end(listint_t **head, const int n);
 listint_t *add_nodeint(listint_t **head, const int n);
 size_t listint_len(const listint_t *h);
-size_t print_listint(const listint_t *h);
-
-/**
-* struct listint_s - it is a singly linked list
-* @n: an integer
-* @next: the points to next node
-* Description: singly linked list node structure
-*/
-typedef struct listint_s
-{
-int n;
-struct listint_s *next;
-} listint_t;
 
 #endif
