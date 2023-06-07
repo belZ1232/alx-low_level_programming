@@ -8,10 +8,8 @@
 
 int sum_listint(listint_t *head)
 {
-	listint_t *temp_node;
+	listint_t *temp_node = head;
 	int sum = 0;
-
-	*temp_node = *head;
 
 	while (temp_node)
 	{
