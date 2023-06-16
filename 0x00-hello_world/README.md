@@ -1,2 +1,1 @@
-#!/bin/bash
-echo C - Hello, World
+C - Hello, World
