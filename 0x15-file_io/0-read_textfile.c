@@ -12,7 +12,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int ax;
 	ssize_t bee, pee;
-	char *buff;
+	char *buf;
 
 	if (!filename)
 		return (0);
@@ -22,16 +22,16 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (ax == -1)
 		return (0);
 
-	buff = malloc(sizeof(char) * (letters));
-	if (!buff)
+	buf = malloc(sizeof(char) * (letters));
+	if (!buf)
 		return (0);
 
-	bee = read(ax, buff, letters);
-	pee = write(STDOUT_FILENO, buff, bee);
+	bee = read(ax, buf, letters);
+	pee = write(STDOUT_FILENO, buf, bee);
 
 	close(ax);
 
-	free(buff);
+	free(buf);
 
 	return (pee);
 }
